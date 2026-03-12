@@ -210,7 +210,7 @@ button {
 /* --- Milestone Card --- */
 .card-wrapper {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: 650px;
     margin: 0 2rem;
     position: relative;
@@ -246,11 +246,36 @@ button {
     pointer-events: auto;
 }
 
+/* Card Layout Structure */
+.card-layout {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    height: 100%;
+}
+
 /* Card Content Sub-Layout */
 .card-content {
     display: flex;
     flex-direction: column;
+    flex: 1;
     height: 100%;
+}
+
+/* Card Image Section */
+.card-image-container {
+    flex-shrink: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 /* Card Typography & Elements */

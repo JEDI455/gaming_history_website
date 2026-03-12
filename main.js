@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Coin-operated entertainment dominated the landscape.",
             desc: "Classics like Pong, Pac-Man, and Space Invaders defined a generation of early electronic gaming. Arcades became massive social hubs for teenagers worldwide.",
             tags: ["Coin-Op", "Vector Graphics", "High Scores"],
-            image: "../assets/arcade_era.png"
+            image: "../assets/NMAH-2006-11760.png"
         },
         {
             year: "1985",
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Gaming moved into the living room.",
             desc: "Following the crash of 1983, the 8-bit era brought immersive, narrative-driven experiences, revolutionizing how stories were told through gameplay directly in the home.",
             tags: ["Cartridges", "Platformers", "Home Entertainment"],
-            image: "../assets/8bit_consoles.png"
+            image: "../assets/NMAH-2006-11760.png"
         },
         {
             year: "1994",
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Polygons replaced sprites. The leap to 3D unlocked vast exploring worlds.",
             desc: "The mid-90s saw massive technological leaps. Early 3D geometry gave birth to genres and franchises that are still beloved and played today across modern platforms.",
             tags: ["CD-ROM", "Polygonal Graphics", "Analog Sticks"],
-            image: "../assets/3d_revolution.png"
+            image: "../assets/NMAH-2006-11760.png"
         },
         {
             year: "2010",
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Photorealistic graphics transformed gaming into the largest entertainment industry.",
             desc: "High fidelity, massive multiplayer worlds, real-time ray tracing, and esports have pushed the boundaries of what is visually and socially possible in interactive media.",
             tags: ["4K Resolution", "Online Multiplayer", "Esports"],
-            image: "../assets/modern_gaming.png"
+            image: "../assets/NMAH-2006-11760.png"
         }
     ];
 
@@ -73,19 +73,24 @@ document.addEventListener('DOMContentLoaded', () => {
         let tagsHTML = m.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
 
         card.innerHTML = `
-            <div class="card-content">
-                <div class="card-header">
-                    <span class="year">${m.year}</span>
-                    <div class="header-line"></div>
-                    <span class="index">${index + 1} / ${milestones.length}</span>
+            <div class="card-layout">
+                <div class="card-image-container">
+                    <img src="${m.image}" alt="Historical gaming hardware" class="card-image">
                 </div>
-                <h2 class="card-title">${m.title}</h2>
-                <div class="card-quote">"${m.quote}"</div>
-                <p class="card-desc">${m.desc}</p>
-                <div class="tags-container">
-                    ${tagsHTML}
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="year">${m.year}</span>
+                        <div class="header-line"></div>
+                        <span class="index">${index + 1} / ${milestones.length}</span>
+                    </div>
+                    <h2 class="card-title">${m.title}</h2>
+                    <div class="card-quote">"${m.quote}"</div>
+                    <p class="card-desc">${m.desc}</p>
+                    <div class="tags-container">
+                        ${tagsHTML}
+                    </div>
+                    <button class="cta-button">Learn More</button>
                 </div>
-                <button class="cta-button">Learn More</button>
             </div>
         `;
         cardWrapper.appendChild(card);
