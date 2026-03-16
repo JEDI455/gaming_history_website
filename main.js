@@ -34,6 +34,54 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "High fidelity, massive multiplayer worlds, real-time ray tracing, and esports have pushed the boundaries of what is visually and socially possible in interactive media.",
             tags: ["4K Resolution", "Online Multiplayer", "Esports"],
             image: "../assets/NMAH-2006-11760.png"
+        },
+        {
+            year: "2015",
+            title: "Placeholder Era 1",
+            quote: "Placeholder quote for this new gaming era.",
+            desc: "Placeholder description detailing this era in gaming history that will be customized later.",
+            tags: ["Placeholder", "Tag A", "Tag B"],
+            image: "../assets/NMAH-2006-11760.png"
+        },
+        {
+            year: "2018",
+            title: "Placeholder Era 2",
+            quote: "Placeholder quote for this new gaming era.",
+            desc: "Placeholder description detailing this era in gaming history that will be customized later.",
+            tags: ["Placeholder", "Tag C", "Tag D"],
+            image: "../assets/NMAH-2006-11760.png"
+        },
+        {
+            year: "2020",
+            title: "Placeholder Era 3",
+            quote: "Placeholder quote for this new gaming era.",
+            desc: "Placeholder description detailing this era in gaming history that will be customized later.",
+            tags: ["Placeholder", "Tag E", "Tag F"],
+            image: "../assets/NMAH-2006-11760.png"
+        },
+        {
+            year: "2022",
+            title: "Placeholder Era 4",
+            quote: "Placeholder quote for this new gaming era.",
+            desc: "Placeholder description detailing this era in gaming history that will be customized later.",
+            tags: ["Placeholder", "Tag G", "Tag H"],
+            image: "../assets/NMAH-2006-11760.png"
+        },
+        {
+            year: "2024",
+            title: "Placeholder Era 5",
+            quote: "Placeholder quote for this new gaming era.",
+            desc: "Placeholder description detailing this era in gaming history that will be customized later.",
+            tags: ["Placeholder", "Tag I", "Tag J"],
+            image: "../assets/NMAH-2006-11760.png"
+        },
+        {
+            year: "2026",
+            title: "Placeholder Era 6",
+            quote: "Placeholder quote for this new gaming era.",
+            desc: "Placeholder description detailing this era in gaming history that will be customized later.",
+            tags: ["Placeholder", "Tag K", "Tag L"],
+            image: "../assets/NMAH-2006-11760.png"
         }
     ];
 
