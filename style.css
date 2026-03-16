@@ -210,8 +210,10 @@ button {
 /* --- Milestone Card --- */
 .card-wrapper {
     width: 100%;
-    max-width: 800px;
-    height: 650px;
+    max-width: 1000px;
+    height: 75vh;
+    max-height: 650px;
+    min-height: 450px;
     margin: 0 2rem;
     position: relative;
     perspective: 1000px;
@@ -232,6 +234,11 @@ button {
     flex-direction: column;
     backdrop-filter: blur(10px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Ensure content is scrollable if it exceeds screen height */
+    
+    /* Scrollbar styling for the card */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(251, 191, 36, 0.3) transparent;
 
     /* Animation States */
     opacity: 0;
@@ -240,17 +247,57 @@ button {
     pointer-events: none;
 }
 
+.milestone-card::-webkit-scrollbar {
+    width: 6px;
+}
+.milestone-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+.milestone-card::-webkit-scrollbar-thumb {
+    background: rgba(251, 191, 36, 0.3);
+    border-radius: 3px;
+}
+.milestone-card::-webkit-scrollbar-thumb:hover {
+    background: rgba(251, 191, 36, 0.5);
+}
+
 .milestone-card.active {
     opacity: 1;
     transform: translateY(0) scale(1);
     pointer-events: auto;
 }
 
+/* Card Layout Structure */
+.card-layout {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    height: 100%;
+    min-height: min-content;
+}
+
 /* Card Content Sub-Layout */
 .card-content {
     display: flex;
     flex-direction: column;
+    flex: 1;
     height: 100%;
+}
+
+/* Card Image Section */
+.card-image-container {
+    flex-shrink: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 /* Card Typography & Elements */
@@ -352,4 +399,74 @@ button {
     transform: translateY(-2px);
     box-shadow: 0 0 25px rgba(251, 191, 36, 0.8);
     background: #fff;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    .card-layout {
+        gap: 20px;
+    }
+    .card-title {
+        font-size: 3rem;
+    }
+    .card-image-container {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        padding: 1.5rem 2rem;
+    }
+    .timeline-nav {
+        margin: 0 2rem;
+        gap: 1.5rem;
+    }
+    .carousel-container {
+        padding: 0 2rem;
+    }
+    .card-wrapper {
+        margin: 0;
+        height: 80vh;
+    }
+    .milestone-card {
+        padding: 2rem;
+    }
+    .card-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .card-image-container {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1rem auto;
+    }
+    .card-title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .card-desc {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    .cta-button {
+        margin-top: 2rem;
+    }
+    
+    /* Navigation Arrows adjustment for narrow screens */
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: -50px;
+        border: none;
+    }
+    .nav-arrow.left {
+        left: 20%;
+    }
+    .nav-arrow.right {
+        right: 20%;
+        left: auto;
+    }
 }
