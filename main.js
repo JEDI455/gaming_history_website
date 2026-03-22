@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="tags-container">
                     ${tagsHTML}
                 </div>
-                <button class="cta-button">Learn More</button>
+                <a href="learn-more.html?id=${index}" class="cta-button" style="text-decoration: none; display: inline-block; text-align: center;">Learn More</a>
             </div>
         `;
         cardWrapper.appendChild(card);
