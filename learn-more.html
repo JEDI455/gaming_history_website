@@ -27,80 +27,7 @@
             Back to Timeline
         </a>
 
-        <div class="lm-header-section">
-            <div class="lm-year-wrap">
-                <span class="lm-year">1972</span>
-                <div class="lm-year-line"></div>
-            </div>
-            <h1 class="lm-title">Magnavox Odyssey</h1>
-            <p class="lm-quote">"The very first. The birth of home video gaming."</p>
-            <div class="tags-container lm-tags">
-                <span class="tag">First commercial home console</span>
-                <span class="tag">Used screen overlays for color</span>
-                <span class="tag">Sold ~350,000 units</span>
-            </div>
-        </div>
-
-        <div class="lm-specs-grid">
-            <div class="lm-spec-card">
-                <div class="lm-spec-title">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-yellow)" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-                    CPU
-                </div>
-                <div class="lm-spec-value">Analog diode-transistor logic</div>
-            </div>
-            <div class="lm-spec-card">
-                <div class="lm-spec-title">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-yellow)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
-                    MEDIA
-                </div>
-                <div class="lm-spec-value">Removable circuit cards</div>
-            </div>
-            <div class="lm-spec-card">
-                <div class="lm-spec-title">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-yellow)" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
-                    ONLINE
-                </div>
-                <div class="lm-spec-value">None</div>
-            </div>
-            <div class="lm-spec-card">
-                <div class="lm-spec-title">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-yellow)" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-                    UNIQUE
-                </div>
-                <div class="lm-spec-value">Plastic screen overlays, board game accessories</div>
-            </div>
-        </div>
-
-        <div class="lm-section">
-            <h2 class="lm-section-title"><span>Tech Specs</span><div class="lm-section-line"></div></h2>
-            <div class="lm-section-content">
-                <p>The Odyssey used no microprocessor — it ran entirely on analog circuits. Players moved dots on screen using controllers with horizontal and vertical knobs.</p>
-                <p>It shipped with dice, play money, and transparent screen overlays — blurring the line between board games and video games.</p>
-            </div>
-        </div>
-
-        <div class="lm-section">
-            <h2 class="lm-section-title"><span>Iconic Games</span><div class="lm-section-line"></div></h2>
-            <div class="lm-games-grid">
-                <div class="lm-game-card">
-                    <h3 class="lm-game-title">Table Tennis</h3>
-                    <p class="lm-game-desc">Inspired Atari's Pong and launched the entire arcade and home gaming industries.</p>
-                </div>
-                <div class="lm-game-card">
-                    <h3 class="lm-game-title">Haunted House</h3>
-                    <p class="lm-game-desc">One of the earliest uses of a screen overlay to create atmosphere — a primitive but creative approach to game design.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="lm-section">
-            <h2 class="lm-section-title"><span>Legacy</span><div class="lm-section-line"></div></h2>
-            <div class="lm-section-content">
-                <p>The Odyssey proved that interactive electronic entertainment could work at home. Without it, there would be no Atari, no Nintendo, no PlayStation.</p>
-                <p>Ralph Baer is widely recognized as the 'Father of Video Games,' and the Odyssey's influence echoes through every console that followed.</p>
-            </div>
-        </div>
+        <div id="lm-dynamic-content"></div>
 
         <div class="lm-footer-actions">
             <a href="index.html" class="cta-button lm-btn-back">
@@ -119,5 +46,8 @@
             <a href="#">About</a>
         </div>
     </footer>
+
+    <script src="learnMoreData.js"></script>
+    <script src="learn-more.js"></script>
 </body>
 </html>

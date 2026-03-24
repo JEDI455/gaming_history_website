@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             year: "2020",
             title: "PS5 / Xbox Series X",
             quote: "\"The SSD is really a key for the next generation... it's a game changer\" — Mark Cerny",
-            desc: "The ninth generation shifted the focus from polygon counts to data speed, using ultra-fast NVMe SSDs to virtually eliminate loading screens. Supporting 4K at 120 fps and hardware ray tracing, these consoles are now defined by deep cloud integration, backward compatibility",
+            desc: "The ninth generation shifted the focus from polygon counts to data speed, using ultra-fast NVMe SSDs to virtually eliminate loading screens. Supporting 4K at 120 fps and hardware ray tracing",
             tags: ["SSD Revolution", "RayTracing", "4K120FPS", "Quick Resume"],
             image: "../assets/NMAH-2006-11760.png"
         }
@@ -141,6 +141,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+        
+        // Add event listener to the Learn More button
+        const btn = card.querySelector('.cta-button');
+        btn.addEventListener('click', () => {
+            window.location.href = `learn-more.html?id=${index}`;
+        });
+
         cardWrapper.appendChild(card);
     });
 
