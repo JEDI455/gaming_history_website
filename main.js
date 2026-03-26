@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "“I always wanted to create something that had never been done before.” — Ralph H Baer",
             desc: "The Magnavox Odyssey was the first home video game console. Built on analog logic without a CPU or sound, it used screen overlays for visuals. By introducing game cards and controllers, it proved the viability of the home gaming market",
             tags: ["World First Console", "Single-Channel Graphics"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Magnavox_Odyssey.png"
         },
         {
             year: "1977",
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "\"The day you launch a product, it's obsolete\" — Nolan Bushnell",
             desc: "The Atari 2600 shifted the industry to microprocessors and ROM cartridges, turning games into standalone commodities. By bringing arcade hits home and introducing its iconic one-button joystick, it made video games a mainstream phenomenon",
             tags: ["Cartridges", "Microprocessor", "Joystick"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Atari_2600.png"
         },
         {
             year: "1985",
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "“The Atari collapsed because they gave too much freedom to third-party developers and the market was swamped with rubbish games” — Hiroshi Yamauchi",
             desc: "The NES saved the industry after the 1983 crash by restoring trust through its \"Seal of Quality\" and strict licensing. Its 8-bit hardware enabled smooth scrolling and complex physics, while its D-pad permanently replaced the joystick as the ergonomic standard",
             tags: ["8Bit Revolution", "Super Mari", "Industry Recovery"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/NES.png"
         },
         {
             year: "1989",
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "\"Lateral thinking with withered technology\" — Gunpei Yokoi",
             desc: "The Game Boy became the first mass-market handheld by prioritizing battery life (30 hours) and affordability over raw power. Using the \"lateral thinking with withered technology\" philosophy, it paired a monochrome screen with Tetris and introduced social gaming via the Link Cable",
             tags: ["Tetris", "Portability", "Long Battery"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Game_Boy.png"
         },
         {
             year: "1994",
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "“The name of the game is not market share, it's how fast we (Sony) can grow the industry” — Ken Kutaragi",
             desc: "The PlayStation revolutionized gaming by replacing cartridges with 650 MB CD-ROMs, enabling full-motion video, high-quality audio, and expansive 3D worlds. Its 32-bit architecture prioritized polygon processing, turning video games into a cinematic, mainstream cultural staple",
             tags: ["CDROM", "3D Graphics", "DualShock", "FPS and JRPG"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Sony_PlayStation.png"
         },
         {
             year: "2000",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "\"We’re just going to be forced to educate the Sony Corporation a bit\" — Ken Kutaragi on PS2 ambitions",
             desc: "The PS2 became the best-selling console ever by doubling as an affordable DVD player and home media hub. Its \"Emotion Engine\" handled complex physics for realistic 3D, while its pioneering backward compatibility allowed players to use their original PlayStation library",
             tags: ["DVD", "Blu-ray", "Online Games", "Emotion Engines"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/PlayStation_2.png"
         },
         {
             year: "2001",
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "\"Xbox is everything The Rock is: cutting-edge, powerful, and exciting\" — Bill Gates at a presentation with The Rock",
             desc: "Microsoft’s debut utilized a PC-like architecture (Intel/Nvidia), making it developer-friendly. It introduced a built-in hard drive, eliminating memory cards, and set the modern standard for online gaming through its integrated Ethernet port and the launch of Xbox Live",
             tags: ["PC Architecture", "HDD", "Xbox Live", "Halo", "Network Play"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Xbox.png"
         },
         {
             year: "2006",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "\"Video games are meant to be one thing only. Fun. Fun for everyone!\" — Satoru Iwata",
             desc: "Nintendo’s \"Blue Ocean\" strategy bypassed the tech race by targeting non-gamers with the Wii Remote. Its intuitive motion tracking made games accessible through physical gestures, proving that a unique \"fun factor\" and interface could outsell superior graphical power",
             tags: ["MotionControl", "Casual Games", "Family Entertainment", "Wiimote"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Nintendo_Wii.png"
         },
         {
             year: "2017",
@@ -73,15 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "\"Switch is the first major hybrid console that combines a home and portable system\" — Tatsumi Kimishima",
             desc: "The Nintendo Switch is a unique hybrid console that transitions instantly between a TV dock and handheld mode. Powered by an Nvidia Tegra chip, it features detachable Joy-Con controllers with \"HD Rumble\" haptics.",
             tags: ["Hybrid", "JoyCon", "HD", "Portability", "Zelda"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/Nintendo_Switch.png"
         },
         {
             year: "2020",
             title: "PS5 / Xbox Series X",
             quote: "\"The SSD is really a key for the next generation... it's a game changer\" — Mark Cerny",
-            desc: "The ninth generation shifted the focus from polygon counts to data speed, using ultra-fast NVMe SSDs to virtually eliminate loading screens. Supporting 4K at 120 fps and hardware ray tracing, these consoles are now defined by deep cloud integration, backward compatibility",
+            desc: "The ninth generation shifted the focus from polygon counts to data speed, using ultra-fast NVMe SSDs to virtually eliminate loading screens. Supporting 4K at 120 fps and hardware ray tracing",
             tags: ["SSD Revolution", "RayTracing", "4K120FPS", "Quick Resume"],
-            image: "../assets/NMAH-2006-11760.png"
+            image: "../assets/PS5_и_Xbox_Series_X.png"
         }
     ];
 
@@ -141,6 +141,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+        
+        // Add event listener to the Learn More button
+        const btn = card.querySelector('.cta-button');
+        btn.addEventListener('click', () => {
+            window.location.href = `learn-more.html?id=${index}`;
+        });
+
         cardWrapper.appendChild(card);
     });
 
