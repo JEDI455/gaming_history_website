@@ -86,16 +86,26 @@ button {
 }
 
 .nav-links a {
-    color: var(--text-secondary);
+    color: #edebe9;
     text-decoration: none;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.nav-links a:hover,
 .nav-links a.active {
     color: var(--accent-yellow);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-links a:hover {
+    background-color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    color: var(--bg-dark);
 }
 
 /* --- Top Timeline Nodes --- */
@@ -333,7 +343,7 @@ button {
     /* Sized down slightly to fit */
     line-height: 1;
     margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.15);
+    color: #edebe9;
     /* More visible gray watermark */
     text-transform: uppercase;
     font-weight: 900;
