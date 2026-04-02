@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "../assets/NES.png"
         },
         {
+            year: "1988",
+            title: "Sega Mega Drive",
+            quote: "“The Genesis does what Nintendon’t.” — Sega advertising campaign, early 1990s",
+            desc: "The Sega Mega Drive was a console that sharply shifted the industry away from “child-oriented” games toward a bolder and faster style. It was one of the first mass-market 16-bit systems that truly demonstrated a leap in performance: its fast processor enabled the creation of dynamic, arcade-like games with almost no compromises.",
+            tags: ["16bit", "BlastProcessing", "ArcadeAtHome"],
+            image: "../assets/Sega_Mega_Drive.png"
+        },
+        {
             year: "1989",
             title: "Game Boy",
             quote: "\"Lateral thinking with withered technology\" — Gunpei Yokoi",

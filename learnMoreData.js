@@ -81,6 +81,34 @@ const consolesData = [
         "impact": "The NES fully revived the video game market after the crash. Under the Nintendo brand, it effectively monopolized the American and Japanese markets by the late 1980s, establishing high quality standards (“Seal of Quality”). Its business model relied on strict licensing: third-party developers could release games only with Nintendo’s approval and within limits, which helped maintain quality (partly influenced by FTC-related agreements). The console laid the foundation for modern genres: platformers (Mario), action RPGs (Zelda), and accessory-based shooters (Duck Hunt). Iconic franchises (Mario, Zelda, Metroid) originated on the NES and built massive fanbases. Culturally, the NES defined the image of a “home gaming system” — a console under the TV with its own lineup of colorful games. Thanks to the NES, tens of millions of players returned to gaming, a new generation of gamers emerged, and a full-fledged gaming community began to form."
     },
     {
+        "title": "Sega Mega Drive",
+        "year": "1988",
+        "quote": "“The Genesis does what Nintendon’t.” — Sega advertising campaign, early 1990s",
+        "tags": ["16bit", "BlastProcessing", "ArcadeAtHome"],
+        "specs": [
+            ["CPU", "Motorola 68000 (16/32-bit CISC) @ 7.67 MHz; Secondary processor: Zilog Z80 @ 3.58 MHz"],
+            ["GPU / Graphics", "Custom Video Display Processor (VDP); Supports hardware scrolling, sprites, DMA"],
+            ["RAM", "64 KB main RAM; 64 KB video RAM (VRAM); 8 KB audio RAM"],
+            ["Storage", "ROM cartridges (typically 4–8 MB, later up to 32 MB with bank switching)"],
+            ["Display Output", "320×224 (standard), 256×224 (compatibility mode); 512-color palette (up to 64 on screen)"],
+            ["Controllers", "3-button controller (later 6-button); Up to 2 ports (expandable via multitap)"],
+            ["Media", "Cartridges; support for add-ons (Mega-CD, 32X)"],
+            ["Audio", "Yamaha YM2612 FM synthesizer (6 channels); TI SN76489 PSG (4 channels); Stereo sound"],
+            ["Power", "~9–10 W"],
+            ["Date / Price", "October 1988 (Japan), August 1989 (USA) — Launch price: $189.99 (USA)"],
+            ["Variants", "Model 1, Model 2, Model 3; Add-ons: Mega-CD (CD support), 32X (32-bit extension)"]
+        ],
+        "overview": "The Mega Drive was one of the first mass-market 16-bit consoles and positioned itself as a “home arcade system.” Its key difference from competitors — especially the Nintendo Entertainment System and later Super Nintendo Entertainment System — was its significantly more powerful CPU. The Motorola 68000 provided much higher processing speed compared to 8-bit systems. This enabled fast gameplay, complex logic, and responsive controls. Games could run at higher speeds with less slowdown — something that became a defining trait of the platform.",
+        "games": [
+            ["Sonic the Hedgehog (1991)", "A direct response to Mario and a technical showcase. Innovation: extreme speed as core gameplay. Connection to hardware: the Motorola 68000 allowed fast physics calculations, and the VDP enabled smooth high-speed scrolling. Without that CPU + scrolling combo, Sonic simply wouldn’t exist in that form."],
+            ["Streets of Rage 2 (1992)", "One of the best beat ’em ups ever made. Innovation: advanced combat system, varied enemy behavior, co-op gameplay. Connection to hardware: YM2612 allowed complex, club-like soundtrack (by Yuzo Koshiro), and sprite handling enabled multiple enemies on screen without slowdown."],
+            ["Gunstar Heroes (1993)", "A technical benchmark for the console. Innovation: dynamic bosses, physics-based objects, weapon combinations. Connection to hardware: heavy use of CPU for physics and VDP for massive sprite manipulation and screen-filling action."],
+            ["Phantasy Star IV (1993)", "One of the most advanced RPGs on the platform. Innovation: manga-style cutscenes, macro combat system. Connection to hardware: large cartridge size allowed story content; memory management enabled smoother transitions and better presentation."],
+            ["Mortal Kombat (1992, Genesis version)", "The most controversial version — and the most important. Innovation: violence and realism in fighting games. Connection to hardware: the Genesis version retained blood (unlike SNES), and the system handled digitized sprites effectively. This directly influenced market positioning and audience perception."]
+        ],
+        "impact": "The Mega Drive became the main competitor to Nintendo in the early 1990s and essentially started the first real “console war.” Before this, Nintendo dominated almost uncontested. Sega changed that through aggressive marketing and a different design philosophy: faster, louder, more “adult.” The Mega Drive wasn’t just another console — it was the first system that seriously challenged the rules of the market and proved that hardware identity + marketing + speed-focused design can reshape the entire industry."
+    },
+    {
         "title": "Game Boy",
         "year": "1989",
         "quote": "\"Lateral thinking with withered technology\"",
