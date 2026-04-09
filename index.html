@@ -1,61 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Games - Timeline</title>
+    <title>History of Games - Welcome</title>
     <!-- Google Fonts for Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="landing.css">
 </head>
-
-<body>
-
+<body class="landing-body">
     <!-- Header Navigation -->
     <header class="top-header">
-        <div class="logo">CONSOLE<span>HISTORY</span></div>
+        <a href="index.html" class="logo" style="text-decoration:none;">CONSOLE<span>HISTORY</span></a>
         <nav class="nav-links">
-            <a href="index.html" class="active">Timeline</a>
+            <a href="timeline.html">Timeline</a>
             <a href="about.html">About</a>
         </nav>
     </header>
 
-    <!-- Top Timeline Node Navigation -->
-    <nav class="timeline-nav" id="timelineNav">
-        <div class="progress-line-bg"></div>
-        <div class="progress-line" id="progressLine"></div>
-        <!-- Nodes will be injected here via JavaScript -->
-    </nav>
-
-    <!-- Central Carousel Container -->
-    <main class="carousel-container">
-
-        <!-- Navigation Arrows (Left/Right) -->
-        <button class="nav-arrow left" id="prevBtn" aria-label="Previous Era">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-
-        <!-- Dynamic Card Wrapper -->
-        <div class="card-wrapper" id="cardWrapper">
-            <!-- The Active Card will be injected here via JavaScript -->
+    <main class="landing-container">
+        <div class="landing-content">
+            <div class="landing-years">1972 &ndash; 2020</div>
+            <h1 class="landing-title">
+                <span class="landing-title-white">The History of</span><br>
+                <span class="landing-title-yellow">Gaming Consoles</span>
+            </h1>
+            <p class="landing-subtitle">
+                Journey through five decades of innovation &mdash; from the first<br>
+                blips on screen to the era of instant loading and<br>
+                photorealistic worlds.
+            </p>
+            <a href="timeline.html" class="cta-button landing-btn">Go to Timeline &rarr;</a>
         </div>
-
-        <button class="nav-arrow right" id="nextBtn" aria-label="Next Era">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-
-    <script src="main.js"></script>
+    </main>
 </body>
-
 </html>

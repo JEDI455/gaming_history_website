@@ -1,0 +1,117 @@
+/* --- Landing Page specific styles --- */
+
+.landing-body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    /* Radial Edge Glow Effect */
+    background-image: radial-gradient(circle at 10% 50%, rgba(29, 78, 216, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 50%, rgba(29, 78, 216, 0.08) 0%, transparent 40%);
+}
+
+.landing-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.landing-years {
+    color: var(--accent-yellow);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.landing-years::before,
+.landing-years::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(251, 191, 36, 0.4);
+}
+
+.landing-years::before {
+    left: -60px;
+}
+
+.landing-years::after {
+    right: -60px;
+}
+
+.landing-title {
+    font-family: var(--font-heading);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.landing-title-white {
+    color: #f3f4f6;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.landing-title-yellow {
+    color: var(--accent-yellow);
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+    white-space: nowrap;
+}
+
+.landing-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    max-width: 650px;
+}
+
+.landing-btn {
+    font-size: 1.1rem;
+    padding: 1.2rem 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .landing-title-white,
+    .landing-title-yellow {
+        font-size: 2.5rem;
+    }
+    .landing-subtitle {
+        font-size: 1rem;
+    }
+    .landing-years::before {
+        left: -40px;
+        width: 30px;
+    }
+    .landing-years::after {
+        right: -40px;
+        width: 30px;
+    }
+}
